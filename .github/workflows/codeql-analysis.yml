@@ -11,3 +11,8 @@
 # supported CodeQL languages.
 #
 name: "CodeQL"
+
+on:
+  push:
+    branches: [ master, develop, "feature/*", "hotfix/*", "release/*" ]
+  pull_request:
