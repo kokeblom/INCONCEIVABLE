@@ -12,3 +12,7 @@
 - Added new version for static Encryptor to encrypt/decrypt strings.
 
 ## 0.5.0
+
+- Fixed the build script to include symbols.
+
+## pre 0.6.0
