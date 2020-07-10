@@ -1,2 +1,2 @@
 param(
-    [stri
+    [string] $nu
