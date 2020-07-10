@@ -1,2 +1,2 @@
 param(
-    [string] $nu
+    [string] $nugetApi
