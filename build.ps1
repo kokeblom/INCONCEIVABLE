@@ -1,3 +1,3 @@
 param(
     [string] $nugetApiKey,
-    [bool]   $nug
+    [bool]   $nugetPub
