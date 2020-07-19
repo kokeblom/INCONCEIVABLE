@@ -1,3 +1,5 @@
 param(
     [string] $nugetApiKey,
-    [bool]   $nugetPublish = $fal
+    [bool]   $nugetPublish = $false
+)
+
