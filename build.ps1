@@ -3,3 +3,4 @@ param(
     [bool]   $nugetPublish = $false
 )
 
+Insta
