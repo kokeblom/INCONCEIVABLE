@@ -3,4 +3,4 @@ param(
     [bool]   $nugetPublish = $false
 )
 
-Install-package BuildUtils -Confirm:$fa
+Install-package BuildUtils -Confirm:$false -
