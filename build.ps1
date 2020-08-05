@@ -3,4 +3,4 @@ param(
     [bool]   $nugetPublish = $false
 )
 
-Install-package BuildUtils -Confirm:$false -Scope Cu
+Install-package BuildUtils -Confirm:$false -Scope Current
