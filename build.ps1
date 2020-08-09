@@ -4,4 +4,4 @@ param(
 )
 
 Install-package BuildUtils -Confirm:$false -Scope CurrentUser -Force
-Impo
+Import-Modul
