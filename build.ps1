@@ -3,4 +3,5 @@ param(
     [bool]   $nugetPublish = $false
 )
 
-Install-package BuildUtils -Confirm:$false -Scope CurrentUser -For
+Install-package BuildUtils -Confirm:$false -Scope CurrentUser -Force
+Impo
