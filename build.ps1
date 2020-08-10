@@ -5,3 +5,5 @@ param(
 
 Install-package BuildUtils -Confirm:$false -Scope CurrentUser -Force
 Import-Module BuildUtils
+
+$run
