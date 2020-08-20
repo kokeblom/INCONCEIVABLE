@@ -8,4 +8,4 @@ Import-Module BuildUtils
 
 $runningDirectory = Split-Path -Parent -Path $MyInvocation.MyCommand.Definition
 
-$nugetTempDir = "$runningDir
+$nugetTempDir = "$runningDirec
