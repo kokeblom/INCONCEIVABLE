@@ -8,4 +8,6 @@ Import-Module BuildUtils
 
 $runningDirectory = Split-Path -Parent -Path $MyInvocation.MyCommand.Definition
 
-$nugetTempDir = "$runningDirectory/artifacts/NuGe
+$nugetTempDir = "$runningDirectory/artifacts/NuGet"
+
+if
