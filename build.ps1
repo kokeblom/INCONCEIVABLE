@@ -10,4 +10,4 @@ $runningDirectory = Split-Path -Parent -Path $MyInvocation.MyCommand.Definition
 
 $nugetTempDir = "$runningDirectory/artifacts/NuGet"
 
-if (Test-Path $nu
+if (Test-Path $nugetT
