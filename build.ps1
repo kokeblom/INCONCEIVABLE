@@ -12,4 +12,4 @@ $nugetTempDir = "$runningDirectory/artifacts/NuGet"
 
 if (Test-Path $nugetTempDir) 
 {
-    Write-host "Cleaning tem
+    Write-host "Cleaning tempora
