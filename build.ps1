@@ -13,3 +13,4 @@ $nugetTempDir = "$runningDirectory/artifacts/NuGet"
 if (Test-Path $nugetTempDir) 
 {
     Write-host "Cleaning temporary nuget path $nugetTempDir"
+    Rem
