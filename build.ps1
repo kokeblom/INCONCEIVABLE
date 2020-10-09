@@ -15,3 +15,4 @@ if (Test-Path $nugetTempDir)
     Write-host "Cleaning temporary nuget path $nugetTempDir"
     Remove-Item $nugetTempDir -Recurse -Force
 }
+
