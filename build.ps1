@@ -16,3 +16,4 @@ if (Test-Path $nugetTempDir)
     Remove-Item $nugetTempDir -Recurse -Force
 }
 
+$ve
