@@ -16,4 +16,4 @@ if (Test-Path $nugetTempDir)
     Remove-Item $nugetTempDir -Recurse -Force
 }
 
-$version = Invoke-
+$version = Invoke-Gitv
