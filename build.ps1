@@ -16,4 +16,5 @@ if (Test-Path $nugetTempDir)
     Remove-Item $nugetTempDir -Recurse -Force
 }
 
-$version = Invoke-Gitvers
+$version = Invoke-Gitversion
+$as
