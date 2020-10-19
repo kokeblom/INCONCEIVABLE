@@ -17,4 +17,4 @@ if (Test-Path $nugetTempDir)
 }
 
 $version = Invoke-Gitversion
-$assemblyVer = $version.assembly
+$assemblyVer = $version.assemblyVers
