@@ -20,3 +20,4 @@ $version = Invoke-Gitversion
 $assemblyVer = $version.assemblyVersion 
 $assemblyFileVersion = $version.assemblyFileVersion
 $nugetPackageVersion = $version.nugetVersion
+$asse
