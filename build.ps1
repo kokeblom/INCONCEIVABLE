@@ -20,4 +20,4 @@ $version = Invoke-Gitversion
 $assemblyVer = $version.assemblyVersion 
 $assemblyFileVersion = $version.assemblyFileVersion
 $nugetPackageVersion = $version.nugetVersion
-$assemblyInformationalVersion = $version.assembl
+$assemblyInformationalVersion = $version.assemblyInfor
