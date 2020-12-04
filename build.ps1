@@ -22,4 +22,4 @@ $assemblyFileVersion = $version.assemblyFileVersion
 $nugetPackageVersion = $version.nugetVersion
 $assemblyInformationalVersion = $version.assemblyInformationalVersion
 
-Write-ho
+Write-host "as
