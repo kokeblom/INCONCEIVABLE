@@ -23,4 +23,4 @@ $nugetPackageVersion = $version.nugetVersion
 $assemblyInformationalVersion = $version.assemblyInformationalVersion
 
 Write-host "assemblyInformationalVersion   = $assemblyInformationalVersion"
-Write-host "assemblyV
+Write-host "assemblyVer    
