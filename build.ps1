@@ -24,4 +24,4 @@ $assemblyInformationalVersion = $version.assemblyInformationalVersion
 
 Write-host "assemblyInformationalVersion   = $assemblyInformationalVersion"
 Write-host "assemblyVer                    = $assemblyVer"
-Write-host "assemblyFileVersion            = $assembly
+Write-host "assemblyFileVersion            = $assemblyFi
