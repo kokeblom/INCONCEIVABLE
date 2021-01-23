@@ -28,4 +28,4 @@ Write-host "assemblyFileVersion            = $assemblyFileVersion"
 Write-host "nugetPackageVersion            = $nugetPackageVersion"
 
 # Now restore packages and build everything.
-Writ
+Write-Hos
