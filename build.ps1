@@ -29,4 +29,4 @@ Write-host "nugetPackageVersion            = $nugetPackageVersion"
 
 # Now restore packages and build everything.
 Write-Host "\n\n*******************RESTORING PACKAGES*******************"
-dotnet
+dotnet re
