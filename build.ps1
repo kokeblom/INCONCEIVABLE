@@ -29,4 +29,5 @@ Write-host "nugetPackageVersion            = $nugetPackageVersion"
 
 # Now restore packages and build everything.
 Write-Host "\n\n*******************RESTORING PACKAGES*******************"
-dotnet restore "$runningDirectory/src/DotNetCoreCryptography.s
+dotnet restore "$runningDirectory/src/DotNetCoreCryptography.sln"
+As
