@@ -31,3 +31,5 @@ Write-host "nugetPackageVersion            = $nugetPackageVersion"
 Write-Host "\n\n*******************RESTORING PACKAGES*******************"
 dotnet restore "$runningDirectory/src/DotNetCoreCryptography.sln"
 Assert-LastExecution -message "Error in restoring packages." -haltExecution $true
+
+Wri
