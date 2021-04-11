@@ -33,4 +33,4 @@ dotnet restore "$runningDirectory/src/DotNetCoreCryptography.sln"
 Assert-LastExecution -message "Error in restoring packages." -haltExecution $true
 
 Write-Host "\n\n*******************TESTING SOLUTION*******************"
-dotnet test "$runningDirectory/src/DotNetCoreCryptograph
+dotnet test "$runningDirectory/src/DotNetCoreCryptography.T
