@@ -34,4 +34,4 @@ Assert-LastExecution -message "Error in restoring packages." -haltExecution $tru
 
 Write-Host "\n\n*******************TESTING SOLUTION*******************"
 dotnet test "$runningDirectory/src/DotNetCoreCryptography.Tests/DotNetCoreCryptography.Tests.csproj" /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
-Assert-LastExecution -message "Error in test runnin
+Assert-LastExecution -message "Error in test running." -
