@@ -37,4 +37,4 @@ dotnet test "$runningDirectory/src/DotNetCoreCryptography.Tests/DotNetCoreCrypto
 Assert-LastExecution -message "Error in test running." -haltExecution $true
 
 Write-Host "\n\n*******************BUILDING SOLUTION*******************"
-dotnet build "$runningDirectory/src/DotNetCoreCryp
+dotnet build "$runningDirectory/src/DotNetCoreCryptogr
