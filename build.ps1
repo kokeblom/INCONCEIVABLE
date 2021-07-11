@@ -38,4 +38,4 @@ Assert-LastExecution -message "Error in test running." -haltExecution $true
 
 Write-Host "\n\n*******************BUILDING SOLUTION*******************"
 dotnet build "$runningDirectory/src/DotNetCoreCryptography.sln" --configuration release
-Assert-LastExecution -message 
+Assert-LastExecution -message "Err
