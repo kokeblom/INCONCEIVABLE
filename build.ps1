@@ -41,4 +41,4 @@ dotnet build "$runningDirectory/src/DotNetCoreCryptography.sln" --configuration 
 Assert-LastExecution -message "Error in building in release configuration" -haltExecution $true
 
 Write-Host "\n\n*******************PUBLISHING SOLUTION*******************"
-dotnet pack "$runningDirectory/src/DotNetCoreCryptographyCore/DotNetCoreCryptographyCore.csproj" --configura
+dotnet pack "$runningDirectory/src/DotNetCoreCryptographyCore/DotNetCoreCryptographyCore.csproj" --configuration 
