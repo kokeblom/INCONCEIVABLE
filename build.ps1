@@ -42,4 +42,4 @@ Assert-LastExecution -message "Error in building in release configuration" -halt
 
 Write-Host "\n\n*******************PUBLISHING SOLUTION*******************"
 dotnet pack "$runningDirectory/src/DotNetCoreCryptographyCore/DotNetCoreCryptographyCore.csproj" --configuration release -o "$runningDirectory/artifacts/NuGet" /p:PackageVersion=$nugetPackageVersion /p:AssemblyVersion=$assemblyVer /p:FileVersion=$assemblyFileVer /p:InformationalVersion=$assemblyInformationalVersion
-Assert-LastExecution -messag
+Assert-LastExecution -message "Erro
