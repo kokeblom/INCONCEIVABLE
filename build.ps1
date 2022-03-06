@@ -44,4 +44,4 @@ Write-Host "\n\n*******************PUBLISHING SOLUTION*******************"
 dotnet pack "$runningDirectory/src/DotNetCoreCryptographyCore/DotNetCoreCryptographyCore.csproj" --configuration release -o "$runningDirectory/artifacts/NuGet" /p:PackageVersion=$nugetPackageVersion /p:AssemblyVersion=$assemblyVer /p:FileVersion=$assemblyFileVer /p:InformationalVersion=$assemblyInformationalVersion
 Assert-LastExecution -message "Error in creating nuget packages.." -haltExecution $true
 
-if ($true -eq $n
+if ($true -eq $nugetP
