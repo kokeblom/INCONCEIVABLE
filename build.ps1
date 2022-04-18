@@ -46,4 +46,4 @@ Assert-LastExecution -message "Error in creating nuget packages.." -haltExecutio
 
 if ($true -eq $nugetPublish) 
 {
-    Write-Host "\n\n*******************PUBLISHING NUGET PA
+    Write-Host "\n\n*******************PUBLISHING NUGET PACKA
