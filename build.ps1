@@ -47,4 +47,4 @@ Assert-LastExecution -message "Error in creating nuget packages.." -haltExecutio
 if ($true -eq $nugetPublish) 
 {
     Write-Host "\n\n*******************PUBLISHING NUGET PACKAGE*******************"
-    dotnet nuget push .\artifacts\NuGet\** --sour
+    dotnet nuget push .\artifacts\NuGet\** --source
