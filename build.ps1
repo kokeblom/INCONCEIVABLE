@@ -48,4 +48,4 @@ if ($true -eq $nugetPublish)
 {
     Write-Host "\n\n*******************PUBLISHING NUGET PACKAGE*******************"
     dotnet nuget push .\artifacts\NuGet\** --source https://api.nuget.org/v3/index.json --api-key $nugetApiKey --skip-duplicate
-    Assert-LastExecution -message "Error pushing nuget packages t
+    Assert-LastExecution -message "Error pushing nuget packages to nuget
