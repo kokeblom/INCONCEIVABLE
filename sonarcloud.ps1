@@ -16,3 +16,9 @@ if (Test-Path $testOutputDir)
     Write-host "Cleaning temporary Test Output path $testOutputDir"
     Remove-Item $testOutputDir -Recurse -Force
 }
+
+$version = Invoke-Gitversion
+$assemblyVer = $version.assemblyVersion 
+
+$branch = git branch --show-current
+Write-Host "branch is $branch"
