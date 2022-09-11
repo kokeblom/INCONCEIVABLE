@@ -11,3 +11,6 @@ namespace DotNetCoreCryptography.Azure
     public class AzureKeyVaultStoreKeyEncryptor : IKeyEncryptor
     {
         private readonly string _actualKeyName;
+        private readonly KeyClient _keyClient;
+
+        public AzureKeyVaultStoreKeyEncryptor(
