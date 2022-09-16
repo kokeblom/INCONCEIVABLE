@@ -14,3 +14,9 @@ namespace DotNetCoreCryptography.Azure
         private readonly KeyClient _keyClient;
 
         public AzureKeyVaultStoreKeyEncryptor(
+            string keyValueStoreAddress,
+            string actualKeyName)
+        {
+            _keyClient = new KeyClient(new Uri(keyValueStoreAddress), new DefaultAzureCredential());
+            _actualKeyName = actualKeyName;
+        }
