@@ -20,3 +20,8 @@ namespace DotNetCoreCryptography.Azure
             _keyClient = new KeyClient(new Uri(keyValueStoreAddress), new DefaultAzureCredential());
             _actualKeyName = actualKeyName;
         }
+
+        public async Task<EncryptionKey> DecryptAsync(byte[] encryptedKey)
+        {
+            var key = await _keyClient.GetKeyAsync(_actualKeyName);
+            var cryptoClient = new CryptographyClient(keyId: key.Value.Id, credential: new DefaultAzureCredential());
