@@ -32,3 +32,8 @@ namespace DotNetCoreCryptography.Azure
                 default).ConfigureAwait(false);
             return EncryptionKey.CreateFromSerializedVersion(result.Plaintext);
         }
+
+        public async Task<byte[]> EncryptAsync(EncryptionKey key)
+        {
+            var keyVaultKey = await _keyClient.GetKeyAsync(_actualKeyName).ConfigureAwait(false);
+            var cryptoClient = new CryptographyClient(keyId: keyVaultKey.Value.Id, credential: new DefaultAzureCredential());
