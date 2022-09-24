@@ -41,3 +41,8 @@ namespace DotNetCoreCryptography.Azure
             var result = await cryptoClient.EncryptAsync(
                 EncryptionAlgorithm.RsaOaep256,
                 key.Serialize(),
+                default).ConfigureAwait(false);
+            return result.Ciphertext;
+        }
+    }
+}
