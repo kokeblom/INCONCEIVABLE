@@ -37,3 +37,7 @@ namespace DotNetCoreCryptography.Azure
         {
             var keyVaultKey = await _keyClient.GetKeyAsync(_actualKeyName).ConfigureAwait(false);
             var cryptoClient = new CryptographyClient(keyId: keyVaultKey.Value.Id, credential: new DefaultAzureCredential());
+
+            var result = await cryptoClient.EncryptAsync(
+                EncryptionAlgorithm.RsaOaep256,
+                key.Serialize(),
