@@ -1,4 +1,4 @@
 <LUTConfig Version="1.0">
   <Repository>..\</Repository>
   <ParallelBuilds>true</ParallelBuilds>
-  <ParallelTestRuns>
+  <ParallelTestRuns>true<
