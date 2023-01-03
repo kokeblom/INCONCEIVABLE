@@ -2,3 +2,4 @@
   <Repository>..\</Repository>
   <ParallelBuilds>true</ParallelBuilds>
   <ParallelTestRuns>true</ParallelTestRuns>
+  <
