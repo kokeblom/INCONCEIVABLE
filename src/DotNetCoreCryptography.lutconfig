@@ -2,4 +2,4 @@
   <Repository>..\</Repository>
   <ParallelBuilds>true</ParallelBuilds>
   <ParallelTestRuns>true</ParallelTestRuns>
-  <TestCaseTimeout>180000</TestCaseT
+  <TestCaseTimeout>180000</TestCaseTimeout>
