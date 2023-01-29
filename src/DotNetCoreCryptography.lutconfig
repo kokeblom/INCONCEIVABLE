@@ -3,4 +3,4 @@
   <ParallelBuilds>true</ParallelBuilds>
   <ParallelTestRuns>true</ParallelTestRuns>
   <TestCaseTimeout>180000</TestCaseTimeout>
-</LUTCon
+</LUTConfig>
