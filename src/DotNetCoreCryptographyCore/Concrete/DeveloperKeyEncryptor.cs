@@ -13,3 +13,11 @@ namespace DotNetCoreCryptographyCore.Concrete
     /// </summary>
     public class DeveloperKeyEncryptor : IKeyEncryptor
     {
+        public const string DeveloperKeyName = "developerKeyValueStore.key";
+
+        private readonly EncryptionKey _key;
+
+        public DeveloperKeyEncryptor(string keyFolder)
+        {
+            InternalUtils.EnsureDirectory(keyFolder);
+            var keyName = Path.Combine(keyFolder, DeveloperKeyName);
