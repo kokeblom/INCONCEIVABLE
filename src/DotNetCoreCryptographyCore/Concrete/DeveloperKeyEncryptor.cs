@@ -21,3 +21,6 @@ namespace DotNetCoreCryptographyCore.Concrete
         {
             InternalUtils.EnsureDirectory(keyFolder);
             var keyName = Path.Combine(keyFolder, DeveloperKeyName);
+            if (!File.Exists(keyName))
+            {
+                using var key = EncryptionKey.CreateDefault();
