@@ -24,3 +24,10 @@ namespace DotNetCoreCryptographyCore.Concrete
             if (!File.Exists(keyName))
             {
                 using var key = EncryptionKey.CreateDefault();
+                File.WriteAllBytes(keyName, key.Serialize());
+            }
+
+            _key = EncryptionKey.CreateFromSerializedVersion(File.ReadAllBytes(keyName));
+        }
+
+        public async Task<EncryptionKey> DecryptAsync(byte[] encryptedKey)
