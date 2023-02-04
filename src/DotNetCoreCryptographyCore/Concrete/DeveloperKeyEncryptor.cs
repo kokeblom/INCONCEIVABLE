@@ -31,3 +31,11 @@ namespace DotNetCoreCryptographyCore.Concrete
         }
 
         public async Task<EncryptionKey> DecryptAsync(byte[] encryptedKey)
+        {
+            using var sourceMs = new MemoryStream(encryptedKey);
+            using var destinationMs = new MemoryStream();
+            await StaticEncryptor.DecryptAsync(sourceMs, destinationMs, _key).ConfigureAwait(false);
+            return EncryptionKey.CreateFromSerializedVersion(destinationMs.ToArray());
+        }
+
+        public async Task<byte[]> EncryptAsync(EncryptionKey key)
