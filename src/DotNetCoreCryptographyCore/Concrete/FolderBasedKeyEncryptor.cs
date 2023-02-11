@@ -11,3 +11,6 @@ namespace DotNetCoreCryptographyCore.Concrete
 {
     /// <summary>
     /// Simple and stupid key value store that encrypt with AES using a folder
+    /// as key material storage. All keys are stored in the given location but
+    /// protected with a password.
+    /// </summary>
