@@ -21,3 +21,7 @@ namespace DotNetCoreCryptographyCore.Concrete
         private readonly string _keyMaterialFolderStore;
 
         private readonly object _lock = new object();
+
+        /// <summary>
+        /// If different from empty, will be used to encrypt keys
+        /// that are stored inside the shared folder.
