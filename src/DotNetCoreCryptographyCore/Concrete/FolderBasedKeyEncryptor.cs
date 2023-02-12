@@ -27,3 +27,6 @@ namespace DotNetCoreCryptographyCore.Concrete
         /// that are stored inside the shared folder.
         /// </summary>
         private readonly string _password;
+        private readonly KeysDatabase _keyInformation;
+
+        public FolderBasedKeyEncryptor(
