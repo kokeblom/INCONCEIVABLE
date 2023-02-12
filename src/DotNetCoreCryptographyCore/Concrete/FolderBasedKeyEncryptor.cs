@@ -25,3 +25,5 @@ namespace DotNetCoreCryptographyCore.Concrete
         /// <summary>
         /// If different from empty, will be used to encrypt keys
         /// that are stored inside the shared folder.
+        /// </summary>
+        private readonly string _password;
