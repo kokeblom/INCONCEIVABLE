@@ -18,3 +18,6 @@ namespace DotNetCoreCryptographyCore.Concrete
     {
         private readonly ConcurrentDictionary<int, EncryptionKey> _keys = new ConcurrentDictionary<int, EncryptionKey>();
         private EncryptionKey _currentKey;
+        private readonly string _keyMaterialFolderStore;
+
+        private readonly object _lock = new object();
