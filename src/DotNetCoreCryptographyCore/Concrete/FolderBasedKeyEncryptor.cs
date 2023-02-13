@@ -35,3 +35,7 @@ namespace DotNetCoreCryptographyCore.Concrete
         {
             _keyMaterialFolderStore = keyMaterialFolderStore;
             _password = password;
+            InternalUtils.EnsureDirectory(_keyMaterialFolderStore);
+
+            _keyInformation = LoadInfo();
+            if (_keyInformation.ActualKeyNumber == 0)
