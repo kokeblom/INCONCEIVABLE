@@ -30,3 +30,8 @@ namespace DotNetCoreCryptographyCore.Concrete
         private readonly KeysDatabase _keyInformation;
 
         public FolderBasedKeyEncryptor(
+            string keyMaterialFolderStore,
+            string password)
+        {
+            _keyMaterialFolderStore = keyMaterialFolderStore;
+            _password = password;
