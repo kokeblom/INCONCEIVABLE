@@ -40,3 +40,6 @@ namespace DotNetCoreCryptographyCore.Concrete
             _keyInformation = LoadInfo();
             if (_keyInformation.ActualKeyNumber == 0)
             {
+                GenerateNewKey();
+            }
+            else
