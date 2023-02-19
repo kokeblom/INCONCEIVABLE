@@ -43,3 +43,7 @@ namespace DotNetCoreCryptographyCore.Concrete
                 GenerateNewKey();
             }
             else
+            {
+                _currentKey = GetKey(_keyInformation.ActualKeyNumber);
+            }
+        }
