@@ -47,3 +47,8 @@ namespace DotNetCoreCryptographyCore.Concrete
                 _currentKey = GetKey(_keyInformation.ActualKeyNumber);
             }
         }
+
+        private bool KeysAreEncrpted => !string.IsNullOrEmpty(_password);
+
+        private byte[] Encrypt(byte[] key)
+        {
