@@ -52,3 +52,7 @@ namespace DotNetCoreCryptographyCore.Concrete
 
         private byte[] Encrypt(byte[] key)
         {
+            if (!String.IsNullOrEmpty(_password))
+            {
+                //use a static shared password to encrypt the data
+                return StaticEncryptor.AesEncryptWithPassword(key, _password);
