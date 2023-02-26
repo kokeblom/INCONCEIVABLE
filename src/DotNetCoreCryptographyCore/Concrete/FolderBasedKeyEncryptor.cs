@@ -56,3 +56,6 @@ namespace DotNetCoreCryptographyCore.Concrete
             {
                 //use a static shared password to encrypt the data
                 return StaticEncryptor.AesEncryptWithPassword(key, _password);
+            }
+
+            //Key is unencrypted
