@@ -59,3 +59,7 @@ namespace DotNetCoreCryptographyCore.Concrete
             }
 
             //Key is unencrypted
+            return key;
+        }
+
+        private byte[] Decrypt(byte[] key)
