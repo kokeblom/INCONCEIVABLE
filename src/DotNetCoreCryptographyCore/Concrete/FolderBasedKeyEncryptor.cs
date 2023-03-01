@@ -63,3 +63,9 @@ namespace DotNetCoreCryptographyCore.Concrete
         }
 
         private byte[] Decrypt(byte[] key)
+        {
+            if (!String.IsNullOrEmpty(_password))
+            {
+                //use a static shared password to decrypt the data
+                return StaticEncryptor.AesDecryptWithPassword(key, _password);
+            }
