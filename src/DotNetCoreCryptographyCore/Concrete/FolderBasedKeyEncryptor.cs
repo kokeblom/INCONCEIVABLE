@@ -73,3 +73,7 @@ namespace DotNetCoreCryptographyCore.Concrete
             //Key is unencrypted
             return key;
         }
+
+        private EncryptionKey GetKey(int keyNumber)
+        {
+            if (!_keys.TryGetValue(keyNumber, out var key))
