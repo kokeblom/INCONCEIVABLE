@@ -77,3 +77,9 @@ namespace DotNetCoreCryptographyCore.Concrete
         private EncryptionKey GetKey(int keyNumber)
         {
             if (!_keys.TryGetValue(keyNumber, out var key))
+            {
+                var keyName = Path.Combine(_keyMaterialFolderStore, $"{keyNumber}.key");
+                var encryptedSerializedKey = File.ReadAllBytes(keyName);
+                var serializedKey = Decrypt(encryptedSerializedKey);
+                key = EncryptionKey.CreateFromSerializedVersion(serializedKey);
+                _keys[keyNumber] = key;
