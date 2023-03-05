@@ -83,3 +83,8 @@ namespace DotNetCoreCryptographyCore.Concrete
                 var serializedKey = Decrypt(encryptedSerializedKey);
                 key = EncryptionKey.CreateFromSerializedVersion(serializedKey);
                 _keys[keyNumber] = key;
+            }
+            return key;
+        }
+
+        public async Task<EncryptionKey> DecryptAsync(byte[] encryptedKey)
