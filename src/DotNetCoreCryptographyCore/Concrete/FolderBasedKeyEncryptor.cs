@@ -97,3 +97,8 @@ namespace DotNetCoreCryptographyCore.Concrete
             await StaticEncryptor.DecryptAsync(sourceMs, destinationMs, decryptionKey).ConfigureAwait(false);
             return EncryptionKey.CreateFromSerializedVersion(destinationMs.ToArray());
         }
+
+        public async Task<byte[]> EncryptAsync(EncryptionKey key)
+        {
+            using var destinationMs = new MemoryStream();
+            destinationMs.Write(BitConverter.GetBytes(_keyInformation.ActualKeyNumber));
