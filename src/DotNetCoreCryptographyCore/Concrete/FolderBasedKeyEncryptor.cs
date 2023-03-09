@@ -102,3 +102,6 @@ namespace DotNetCoreCryptographyCore.Concrete
         {
             using var destinationMs = new MemoryStream();
             destinationMs.Write(BitConverter.GetBytes(_keyInformation.ActualKeyNumber));
+            using var sourceMs = new MemoryStream(key.Serialize());
+
+            //we need to generate another IV to avoid encrypting always with the very same value.
