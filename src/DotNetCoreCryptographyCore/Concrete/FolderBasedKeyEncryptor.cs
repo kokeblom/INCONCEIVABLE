@@ -105,3 +105,6 @@ namespace DotNetCoreCryptographyCore.Concrete
             using var sourceMs = new MemoryStream(key.Serialize());
 
             //we need to generate another IV to avoid encrypting always with the very same value.
+            await StaticEncryptor.EncryptAsync(sourceMs, destinationMs, _currentKey).ConfigureAwait(false);
+            return destinationMs.ToArray();
+        }
