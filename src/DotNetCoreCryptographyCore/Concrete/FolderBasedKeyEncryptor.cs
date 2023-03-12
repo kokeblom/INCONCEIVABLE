@@ -108,3 +108,5 @@ namespace DotNetCoreCryptographyCore.Concrete
             await StaticEncryptor.EncryptAsync(sourceMs, destinationMs, _currentKey).ConfigureAwait(false);
             return destinationMs.ToArray();
         }
+
+        /// <summary>
