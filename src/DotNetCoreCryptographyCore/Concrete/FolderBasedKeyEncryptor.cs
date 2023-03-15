@@ -114,3 +114,6 @@ namespace DotNetCoreCryptographyCore.Concrete
         /// same key to encrypt everything and you want to change actual key.
         /// </summary>
         public void GenerateNewKey()
+        {
+            _keyInformation.ActualKeyNumber += 1;
+            var keyName = Path.Combine(_keyMaterialFolderStore, $"{_keyInformation.ActualKeyNumber}.key");
