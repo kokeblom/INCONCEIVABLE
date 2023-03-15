@@ -117,3 +117,8 @@ namespace DotNetCoreCryptographyCore.Concrete
         {
             _keyInformation.ActualKeyNumber += 1;
             var keyName = Path.Combine(_keyMaterialFolderStore, $"{_keyInformation.ActualKeyNumber}.key");
+            _currentKey = EncryptionKey.CreateDefault();
+            _keys[_keyInformation.ActualKeyNumber] = _currentKey;
+            _keyInformation.KeysInformation[_keyInformation.ActualKeyNumber.ToString()] = new KeyInformation()
+            {
+                Id = _keyInformation.ActualKeyNumber.ToString(),
