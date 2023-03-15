@@ -110,3 +110,7 @@ namespace DotNetCoreCryptographyCore.Concrete
         }
 
         /// <summary>
+        /// Generates another key files, useful if you want to avoid using the very
+        /// same key to encrypt everything and you want to change actual key.
+        /// </summary>
+        public void GenerateNewKey()
