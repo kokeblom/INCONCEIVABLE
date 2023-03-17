@@ -122,3 +122,11 @@ namespace DotNetCoreCryptographyCore.Concrete
             _keyInformation.KeysInformation[_keyInformation.ActualKeyNumber.ToString()] = new KeyInformation()
             {
                 Id = _keyInformation.ActualKeyNumber.ToString(),
+                Encrypted = KeysAreEncrpted,
+                CreatonDate = DateTime.UtcNow,
+                Revoked = false,
+            };
+
+            var serializedKey = _currentKey.Serialize();
+            var encryptedSerializedKey = Encrypt(serializedKey);
+            File.WriteAllBytes(keyName, encryptedSerializedKey);
