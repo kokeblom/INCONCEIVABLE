@@ -148,3 +148,6 @@ namespace DotNetCoreCryptographyCore.Concrete
         {
             lock (_lock)
             {
+                File.WriteAllText(GetInfoFileName, JsonSerializer.Serialize(information));
+            }
+        }
