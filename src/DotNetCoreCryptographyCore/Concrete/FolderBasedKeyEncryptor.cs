@@ -130,3 +130,12 @@ namespace DotNetCoreCryptographyCore.Concrete
             var serializedKey = _currentKey.Serialize();
             var encryptedSerializedKey = Encrypt(serializedKey);
             File.WriteAllBytes(keyName, encryptedSerializedKey);
+            SaveInfo(_keyInformation);
+        }
+
+        private KeysDatabase LoadInfo()
+        {
+            var infoFile = GetInfoFileName;
+            if (File.Exists(infoFile))
+            {
+                return JsonSerializer.Deserialize<KeysDatabase>(File.ReadAllText(infoFile));
