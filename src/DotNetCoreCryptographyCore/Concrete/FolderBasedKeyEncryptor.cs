@@ -139,3 +139,12 @@ namespace DotNetCoreCryptographyCore.Concrete
             if (File.Exists(infoFile))
             {
                 return JsonSerializer.Deserialize<KeysDatabase>(File.ReadAllText(infoFile));
+            }
+
+            return new KeysDatabase();
+        }
+
+        private void SaveInfo(KeysDatabase information)
+        {
+            lock (_lock)
+            {
