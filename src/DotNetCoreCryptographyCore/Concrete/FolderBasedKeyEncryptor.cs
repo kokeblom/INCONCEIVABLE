@@ -155,3 +155,8 @@ namespace DotNetCoreCryptographyCore.Concrete
         private string GetInfoFileName => Path.Combine(_keyMaterialFolderStore, "info.json");
 
         private class KeysDatabase
+        {
+            public int ActualKeyNumber { get; set; }
+
+            public Dictionary<string, KeyInformation> KeysInformation { get; set; } = new Dictionary<string, KeyInformation>();
+        }
