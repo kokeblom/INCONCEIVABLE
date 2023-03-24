@@ -160,3 +160,10 @@ namespace DotNetCoreCryptographyCore.Concrete
 
             public Dictionary<string, KeyInformation> KeysInformation { get; set; } = new Dictionary<string, KeyInformation>();
         }
+
+        private class KeyInformation
+        {
+            public string Id { get; set; }
+
+            public Boolean Encrypted { get; set; }
+            public DateTime CreatonDate { get; internal set; }
