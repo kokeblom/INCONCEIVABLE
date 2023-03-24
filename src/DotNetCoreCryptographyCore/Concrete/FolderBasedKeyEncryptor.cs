@@ -167,3 +167,7 @@ namespace DotNetCoreCryptographyCore.Concrete
 
             public Boolean Encrypted { get; set; }
             public DateTime CreatonDate { get; internal set; }
+            public bool Revoked { get; internal set; }
+        }
+    }
+}
