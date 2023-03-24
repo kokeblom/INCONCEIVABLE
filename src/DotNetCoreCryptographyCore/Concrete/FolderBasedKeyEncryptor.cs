@@ -151,3 +151,7 @@ namespace DotNetCoreCryptographyCore.Concrete
                 File.WriteAllText(GetInfoFileName, JsonSerializer.Serialize(information));
             }
         }
+
+        private string GetInfoFileName => Path.Combine(_keyMaterialFolderStore, "info.json");
+
+        private class KeysDatabase
