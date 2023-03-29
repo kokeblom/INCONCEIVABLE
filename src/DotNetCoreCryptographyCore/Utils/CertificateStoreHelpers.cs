@@ -10,3 +10,7 @@ namespace DotNetCoreCryptographyCore.Utils
             return GetCertificateFromStore(thumbprint, StoreLocation.LocalMachine) ??
                 GetCertificateFromStore(thumbprint, StoreLocation.CurrentUser);
         }
+
+        private static X509Certificate2? GetCertificateFromStore(string thumbprint, StoreLocation storeLocation)
+        {
+            X509Store store = new X509Store(StoreLocation.LocalMachine);
