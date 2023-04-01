@@ -19,3 +19,4 @@ namespace DotNetCoreCryptographyCore.Utils
             X509Certificate2Collection certificates = store.Certificates.Find(
                 X509FindType.FindByThumbprint,
                 thumbprint,
+                false);
