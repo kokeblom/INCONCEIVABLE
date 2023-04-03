@@ -23,3 +23,5 @@ namespace DotNetCoreCryptographyCore.Utils
 
             if (certificates.Count == 1)
             {
+                return certificates[0];
+            }
