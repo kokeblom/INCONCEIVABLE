@@ -20,3 +20,5 @@ namespace DotNetCoreCryptographyCore.Utils
                 X509FindType.FindByThumbprint,
                 thumbprint,
                 false);
+
+            if (certificates.Count == 1)
