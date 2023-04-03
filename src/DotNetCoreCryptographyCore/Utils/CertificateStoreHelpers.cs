@@ -22,3 +22,4 @@ namespace DotNetCoreCryptographyCore.Utils
                 false);
 
             if (certificates.Count == 1)
+            {
