@@ -27,3 +27,8 @@ namespace DotNetCoreCryptographyCore.Utils
             }
 
             store.Close();
+
+            return null;
+        }
+    }
+}
