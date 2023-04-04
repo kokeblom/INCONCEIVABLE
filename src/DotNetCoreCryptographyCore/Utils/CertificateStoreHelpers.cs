@@ -25,3 +25,5 @@ namespace DotNetCoreCryptographyCore.Utils
             {
                 return certificates[0];
             }
+
+            store.Close();
